@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <!-- 質問を書く -->
+    <!-- butoonを作る -->
+    <!-- -->
+    <div id="situmonn">大学生がよく行きそうな場所は？</div>
+    <button id="iti">居酒屋</button>
+    <button id="ni">カラオケ</button>
+    <button id="san">ボウリング</button>
+    <div id="kotae1"></div>
+
+    <script>
+      const iti = document.getElementById("iti")
+      const ni = document.getElementById("ni")
+      const san = document.getElementById("san")
+
+      iti.onclick = function () {
+        kotae1.textContent = "正解！お酒は20歳になってから"
+      }
+
+      ni.onclick = function () {
+        kotae1.textContent = "正解！フリータイムでオールしがち"
+      }
+
+      san.onclick = function () {
+        kotae1.textContet = "正解！カーブ投げがち"
+      }
+    </script>
+  </body>
+</html>
