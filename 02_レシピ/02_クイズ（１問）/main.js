@@ -7,21 +7,20 @@ const feedback = document.getElementById("feedback")
 
 // クイズの内容
 const quiz = {
-  text: "この星の名前は何でしょう？",
-  image: "Ganymede.jpg",
+  text: "この生き物の名前は何でしょう？",
+  image: "tokage.jpg",
   choices: [
     {
-      text: "ゴリアテ",
-      feedback:
-        "残念！ゴリアテは、旧約聖書に登場するダビデに石で殺される巨人だよ。",
+      text: "ヘビ",
+      feedback: "不正解！",
     },
     {
-      text: "ゼニガメ",
-      feedback: "残念！ゼニガメは、クサガメまたはニホンイシガメの幼体だよ。",
+      text: "カメ",
+      feedback: "全然ちゃうで！",
     },
     {
-      text: "ガニメデ",
-      feedback: "正解！ガニメデは、木星の第三惑星だよ！",
+      text: "トカゲ",
+      feedback: "正解！　コモドオオトカゲです！",
     },
   ],
 }
