@@ -14,23 +14,23 @@
     <button id="iti">居酒屋</button>
     <button id="ni">カラオケ</button>
     <button id="san">ボウリング</button>
-    <div id="kotae1"></div>
+    <div id="kotae"></div>
 
     <script>
       const iti = document.getElementById("iti")
       const ni = document.getElementById("ni")
       const san = document.getElementById("san")
-
+      const kotae = document.getElementById("kotae")
       iti.onclick = function () {
-        kotae1.textContent = "正解！お酒は20歳になってから"
+        kotae.textContent = "正解！お酒は20歳になってから"
       }
 
       ni.onclick = function () {
-        kotae1.textContent = "正解！フリータイムでオールしがち"
+        kotae.textContent = "正解！フリータイムでオールしがち"
       }
 
       san.onclick = function () {
-        kotae1.textContent = "正解！カーブ投げがち"
+        kotae.textContent = "正解！カーブ投げがち"
       }
     </script>
   </body>
