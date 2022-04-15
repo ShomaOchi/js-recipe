@@ -1,11 +1,15 @@
 const quizText = document.getElementById("quiz-text")
 const quizImage = document.getElementById("quiz-image")
-const choice1 = document.getElementById("choice-1")
-const choice2 = document.getElementById("choice-2")
-const choice3 = document.getElementById("choice-3")
-const choice4 = document.getElementById("choice-4")
+const choicescontainer = document.getElementById("choices-container")
 const feedback = document.getElementById("feedback")
-
+const choice1 = document.createElement("button")
+const choice2 = document.createElement("button")
+const choice3 = document.createElement("button")
+const choice4 = document.createElement("button")
+choicescontainer.appendChild(choice1)
+choicescontainer.appendChild(choice2)
+choicescontainer.appendChild(choice3)
+choicescontainer.appendChild(choice4)
 // クイズの内容
 const quiz = {
   text: "この生き物の名前は何でしょう？",
