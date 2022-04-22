@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2小テスト</title>
+  </head>
+  <body></body>
+  <script>
+    const abc = "0101101"
+
+    const toMorseCode = function () {
+      // 馴染みあるパターン
+      let output = "" //  "-・-・・-・" を返却するための入れ物
+      const arr = Array.from(abc) //  Array.from(str)をすることによって、str="0101101" -> ["0", "1","0","1","1","0","1"]
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === "1") {
+          output += "・"
+        } else if (arr[i] === "0") {
+          output += "-"
+        }
+      }
+      return output
+    }
+    console.log(toMorseCode(abc))
+  </script>
+</html>
