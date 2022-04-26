@@ -37,7 +37,7 @@
 
       addButton.onclick = function () {
         // inputに入力した内容を取得する
-        const text = memoInput.value
+
         memos.push(memoInput.value)
         // ローカルストレージのmemosキーにJSONにしたmemosを保存する。
         localStorage.memos = JSON.stringify(memos)
