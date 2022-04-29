@@ -6,9 +6,12 @@
     <title>Vueの基礎</title>
   </head>
   <body>
-    <h1>Vueの基礎</h1>
-    <!-- ↓ここに追加する -->
-
+    <section id="created">
+      <h3>created</h3>
+      <div>{{ memo }}</div>
+      <input type="text" v-model="inputValue" />
+      <button v-on:click="save">保存</button>
+    </section>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="main.js"></script>
   </body>
